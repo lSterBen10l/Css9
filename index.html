@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: #ccc;
+        }
+        .container {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            min-height: 400px;
+            box-sizing: border-box;
+        }
+        .full-witdh{
+            width: 100%;
+        }
+        nav {
+            width: 100%;
+        }
+        nav ul{
+            margin: 20px 0 0;
+            padding: 0;
+            border-radius: 4px;
+            background: #262626;
+            overflow: hidden;
+        }
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+        }
+        nav ul li a{
+            display: block;
+            padding: 15px 20px;
+            color: #fff;
+            text-decoration: none;
+
+        }
+        .active,
+        nav ul li a:hover {
+            background: #f00;
+
+        }      
+        .col7{
+            width: 70%;
+            min-height: 400px;
+            background-color: #ccc;
+            float: left;
+        }  
+        .col3{
+            width: 30%;
+            min-height: 400px;
+            background-color: #f1f1f1;
+            float: right;
+            box-sizing: border-box;
+            padding: 20px;
+        }  
+        .col3 ul{
+            margin: 0;
+            padding: 0;
+        }
+        .col3 ul li{
+            list-style: none;
+            padding: 8px;
+            border-bottom: 1px solid rgba(0, 0,0, 1);
+
+        }
+        .col3 ul li:hover{
+            background: #f00;
+            color: #fff;
+        }
+        .margintop{
+            margin-top: 20px;
+        }
+        .post {
+            padding: 20px;
+            background: #ccc;
+            background: #f1f1f1;
+
+        }
+
+        img{
+            max-width: 100%;
+        }
+        .footer{
+            margin-top: 10px;
+            text-align: center;
+            
+        }
+        @media (max-width:900px)
+        {
+            .container
+            {
+                width: 100%;
+            }
+            nav ul li{
+            
+            display: block;
+            text-align: center;
+            }
+            .col7, 
+            .col3{
+                width: 100%;
+                float: none;
+            }
+            .col3{
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="full-width">
+            <img src="" alt="">
+        </div>
+        <nav>
+            <ul>
+            
+                <li> <a href="#" class="active"> home</a></li>
+                <li> <a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <div class="full-width margintop">
+            <div class="col7">
+                <div class="post">
+                    <h1>Lorem Ip</h1>
+                    <img src="Landscape-Color.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi minima sint ipsum consequatur blanditiis, impedit corrupti ducimus, velit, rerum eos laborum doloribus facilis saepe? Aperiam mollitia rem nihil asperiores quae!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit quas placeat sequi fuga similique autem maiores ad illo in explicabo? Recusandae mollitia laudantium perspiciatis quibusdam! Non odit placeat ullam pariatur.</p>
+                </div>
+                <div class="post margintop">
+                    <h1>Why use it?</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam doloribus sed perferendis a officia laboriosam deleniti tenetur, quae architecto, perspiciatis vero nam adipisci dolore. Fugiat esse eligendi minima ab?</p>
+
+                </div>
+            </div> 
+            <div class="col3">
+                <h1>SideBar</h1>
+                <ul>
+                    <li>Blah</li>
+                    <li>YipYap</li>
+                    <li>BlingBlang</li>
+                    <li>ChingChong</li>
+                </ul>
+            </div>
+            <div style="clear: both;">
+
+            </div>
+        </div>
+        <div class="full-width">
+            <p class="footer"> @KJNoaihakbgaoiwnqmoqjbwrqoib</p>
+        </div>
+    </div>
+</body>
+</html>
